@@ -1,5 +1,18 @@
+# Credits to ChatGPT
+
+import math
 
 def lcm(a, b):
-  """compute Least Common Multiple between two integers."""
+    # Calculate the absolute value of the product of a and b
+    abs_product = abs(a * b)
+    # Calculate the GCD of a and b
+    gcd = math.gcd(a, b)
+    # Calculate the LCM using the formula
+    lcm = abs_product // gcd
+    return lcm
 
-  pass
+# Example usage:
+num1 = 12
+num2 = 18
+result = lcm(num1, num2)
+print(f"The LCM of {num1} and {num2} is {result}")
